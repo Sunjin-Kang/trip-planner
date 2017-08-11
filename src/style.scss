@@ -1,0 +1,73 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+body {
+  margin: 0;
+}
+
+
+
+ul {
+  list-style-type: none;
+}
+
+.navbar-collapse {
+  background-color: olive;
+  width: 100%;
+}
+
+.navbar-nav>li>a {
+  color: white;
+}
+
+.navbar-nav>li>a:hover {
+  background-color: darkkhaki
+}
+
+span.icon:before {
+  font-family: 'Glyphicons Halflings';
+  content: "\f015";
+}
+
+
+.container-fluid {
+  padding: 0;
+  margin: 0;
+}
+
+.col-lg-3 {
+  padding: 0px;
+  margin: 0px;
+}
+
+#map {
+  height: 100vh;
+  // width: 80vw;
+  margin: 0;
+  padding: 0;
+
+}
+
+.options {
+  background-color: green;
+  height: 100vh;
+  // width: 100px;
+}
+
+.type {
+  background-color: black;
+  height: 50px;
+  width: 50px;
+}
+
+.options-text {
+  text-align: center;
+}
+
+select {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#current-day {
+  background-color: yellow;
+}
