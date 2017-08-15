@@ -6754,21 +6754,50 @@ button.close {
     display: none !important;
   }
 }
+@charset "UTF-8";
 body {
-  margin: 0; }
+  margin: 0;
+  font-family: 'Oswald', sans-serif;
+  font-size: 15px; }
+
+.hotel-label, .restaurant-label, .activity-label {
+  font-family: 'Lobster', cursive;
+  font-size: 22px;
+  text-align: center;
+  color: #9d9d9d; }
 
 ul {
-  list-style-type: none; }
+  list-style-type: none;
+  text-align: center;
+  margin: 0px;
+  padding: 0px; }
+
+.item {
+  font-family: 'Oswald', sans-serif;
+  font-size: 15px;
+  color: white;
+  margin: 0 25%;
+  text-align: left; }
 
 .navbar-collapse {
-  background-color: olive;
+  background-color: #222222;
   width: 100%; }
 
-.navbar-nav > li > a {
-  color: white; }
+a {
+  color: #9d9d9d; }
+
+.navigation {
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px; }
+
+.logo a {
+  font-family: 'Lobster', cursive;
+  font-size: 25px;
+  color: #d1efdd; }
 
 .navbar-nav > li > a:hover {
-  background-color: darkkhaki; }
+  background-color: #00bc66;
+  color: white; }
 
 span.icon:before {
   font-family: 'Glyphicons Halflings';
@@ -6788,7 +6817,7 @@ span.icon:before {
   padding: 0; }
 
 .options {
-  background-color: green;
+  background-color: #222222;
   height: 100vh; }
 
 .type {
@@ -6805,4 +6834,54 @@ select {
   text-align: center; }
 
 #current-day {
-  background-color: yellow; }
+  background-color: #222222;
+  color: #d1efdd;
+  text-align: center; }
+
+select {
+  background-color: white;
+  text-align: center;
+  width: 50%; }
+
+.days {
+  margin: 0px;
+  text-align: center; }
+
+hr {
+  opacity: 0.3;
+  width: 70%; }
+
+.btn {
+  background-color: #00bc66;
+  border-radius: 50%; }
+
+.btn:hover {
+  background-color: #d1efdd; }
+
+.item::before {
+  content: "\2022    ";
+  color: #00bc66; }
+
+.glyphicon {
+  position: relative;
+  top: 1px;
+  color: #00bc66;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal; }
+
+.glyphicon-map-marker {
+  font-size: 22px; }
+
+.glyphicon-cutlery:before {
+  content: "\E179";
+  font-size: 15px; }
+
+.glyphicon-home:before {
+  content: "\E021";
+  font-size: 15px; }
+
+.glyphicon-play:before {
+  content: "\E072";
+  font-size: 15px; }

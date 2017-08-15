@@ -4,17 +4,18 @@
 <head>
   <title>Trip Planner</title>
   <script src="./bundle.js" defer></script>
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
   <link rel="stylesheet" href="./bundle.css">
 </head>
 
 <body>
   <div class="collapse navbar-collapse">
     <ul class="nav navbar-nav">
-      <li><a><span class="icon glyphicon glyphicon-glyphicon-map-marker">
-      </span><b>Trip Planner</b></a></li>
-      <li><a href="#"><b>Home</b></a></li>
-      <li><a href="#"><b>About</b></a></li>
-      <li><a href="#"><b>Contact</b></a></li>
+      <li class='logo'><a><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>&nbsp;&nbsp;<b>Trip Planner</b></a></li>
+      <li class='navigation'><a href="#"><b>Home</b></a></li>
+      <li class='navigation'><a href="#"><b>About</b></a></li>
+      <li class='navigation'><a href="#"><b>Contact</b></a></li>
     </ul>
   </div>
 
@@ -22,86 +23,70 @@
   <div class="container-fluid">
     <div class='row'>
 
-
       <div id="map" class='col-lg-9'>
       </div>
 
-
-        <div class='options col-lg-3'>
-          <p class='options-text'><b>Hotels</b></p>
+      <div class='options col-lg-3'>
+        <p class='hotel-label'><i class="glyphicon glyphicon-home"></i>&nbsp;&nbsp;&nbsp;<b>Hotels</b></p>
           <select>
-            <option value='hotel1'>Select Hotel</option>
-            <option value='hotel2'>Hotel1</option>
+            <option value='hotel'>Select Hotel</option>
+            <option value='hotel2'>Ritz Carlton</option>
           </select>
-          <br>
-          <p class='options-text'><b>Restaurants</b></p>
+        <br>
+
+        <p class='restaurant-label'><i class="glyphicon glyphicon-cutlery">&nbsp;</i><b>Restaurants</b></p>
           <select>
             <option value='hotel1'>Select Restaurant</option>
-            <option value='hotel2'>Hotel1</option>
+            <option value='hotel2'>Nobu</option>
           </select>
-          <br>
-          <p class='options-text'><b>Activities</b></p>
+        <br>
+
+        <p class='activity-label'><i class="glyphicon glyphicon-play"></i>&nbsp;&nbsp;<b>Activities</b></p>
           <select>
             <option value='hotel1'>Select Activity</option>
-            <option value='hotel2'>Hotel1</option>
+            <option value='hotel2'>Six Flags</option>
           </select>
+        <br>
 
+        <div id='current-day'>
+          <h1>DAY 2</h1>
+        </div>
 
-
-          <div id='current-day'>
-            <h2>Day 2</h2>
-          </div>
-
-          <div class='plan'>
-            <div class='schedule'>
-          </div>
-
-          <div class='iternary'>
-            </div>
+        <hr>
+        <div class='days'>
+          <div class='row'>
+            &nbsp;
+            <button type="button" class="btn">1</button>
+            <button type="button" class="btn">2</button>
+            <button type="button" class="btn">3</button>
+            <button type="button" class="btn">+</button>
           </div>
         </div>
 
-
-
-
+        <hr>
+        <div class='iternary'>
+          <i class="glyphicon glyphicon-glyphicon-th"></i>
+          <ul class='hotel-label'>My Hotel
+            <p></p>
+            <li class='item'>The Ritz Carlton</li>
+          </ul>
+          <br>
+          <ul class='restaurant-label'>My Restaurants
+            <p></p>
+            <li class='item'>Nobu</li>
+            <li class='item'> Cheesecake Factory</li>
+          </ul>
+          <br>
+          <ul class='activity-label'>My Activities
+            <p></p>
+            <li class='item'>Six Flags</li>
+            <li class='item'>Central Park</li>
+          </ul>
+        </div>
 
       </div>
-
     </div>
   </div>
-  <!-- <div class='options dropdown'>
-      <button class='btn btn-primary dropdown-toggle' type='button' data-toggle='dropdown'>Hotels
-        <span class='caret'></span></button>
-      <ul class='dropdown-menu'>
-        <li>Hotel1</li>
-        <li>Hotel2</li>
-      </ul>
-
-    </div>
-
-    <div class='options dropdown'>
-      <button class='btn btn-primary dropdown-toggle' type='button' data-toggle='dropdown'>Restaurants
-          <span class='caret'></span></button>
-      <ul class='dropdown-menu'>
-        <li>Restaurants1</li>
-        <li>Restaurants2</li>
-      </ul>
-    </div>
-
-    <div class='options dropdown'>
-      <button class='btn btn-primary dropdown-toggle' type='button' data-toggle='dropdown'>Things To Do
-          <span class='caret'></span></button>
-      <ul class='dropdown-menu'>
-        <li>Activity1</li>
-        <li>Activity2</li>
-      </ul>
-    </div>
-
-
-
-    <div id='iterary'>
-    </div> -->
-  <!-- </div> -->
 </body>
 
 </html>
